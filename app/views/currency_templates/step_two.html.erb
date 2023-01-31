@@ -1,0 +1,13 @@
+<h1>Convert <%= @at_hand %></h1>
+
+<p>Go <a href="/forex">Back</a>.</p>
+
+<ul>
+<% @array_of_symbols.each do |a_symbol| %>
+  <li> 
+    <a href="/forex/<% @at_hand %>/<%= a_symbol %>">
+    Convert 1 <%= @at_hand %> to <%= a_symbol %>...
+    </a>
+  </li>
+<% end %>
+</ul>
